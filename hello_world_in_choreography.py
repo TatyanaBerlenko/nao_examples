@@ -4,17 +4,18 @@ class MyClass(GeneratedClass):
 
     def onLoad(self):
         # put initialization code here
-        print('onLoad')
-        pass
+        print('onLoad!')
+        
 
     def onUnload(self):
         print('onUnload!')
-        pass
+        
 
     def onInput_onStart(self):
-        # self.onStopped() #activate the output of the box
         print('onStart!')
 
+        #self.onStopped() #activate the output of the box
+       
     def onInput_onStop(self):
         print('onStopped!')
         self.onUnload()  # it is recommended to reuse the clean-up as the box is stopped
